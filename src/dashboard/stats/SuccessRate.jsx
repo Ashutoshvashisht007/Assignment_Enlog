@@ -1,7 +1,7 @@
 
 const SuccessRate = () => {
   return (
-    <div className=" p-6 flex flex-col justify-center ">
+    <div className=" p-6 flex flex-col justify-center rounded-lg shadow-sm w-full max-w-sm h-full hover:scale-105 hover:shadow-md transition-transform duration-200">
       <div className="flex items-center justify-center">
         <div className="relative w-24 h-24">
           <svg className="w-24 h-24 transform -rotate-90">

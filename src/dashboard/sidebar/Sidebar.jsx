@@ -1,11 +1,41 @@
-import SidebarNavigation from './SidebarNavigation';
-import ProjectsSection from './ProjectSection';
-import TeamMembers from './TeamMembers';
-import { LogOut } from 'lucide-react';
+import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import SidebarNavigation from "./SidebarNavigation.jsx"
+import ProjectsSection from "./ProjectSection.jsx"
+import TeamMembers from "./TeamMembers.jsx"
+import { LogOut } from "lucide-react"
+
+const items = [
+  {
+    title: "Home",
+    url: "#",
+    icon: Home,
+  },
+  {
+    title: "Inbox",
+    url: "#",
+    icon: Inbox,
+  },
+  {
+    title: "Calendar",
+    url: "#",
+    icon: Calendar,
+  },
+  {
+    title: "Search",
+    url: "#",
+    icon: Search,
+  },
+  {
+    title: "Settings",
+    url: "#",
+    icon: Settings,
+  },
+]
+
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="w-64 bg-white border-r border-gray-200 flex flex-col overflow-auto">
+    <div className="w-64 bg-white border-r border-gray-200 hidden sm:flex flex-col overflow-auto scrollbar-hide">
       <div className="p-4">
         <h1 className="text-xl font-bold text-gray-900">BizLink</h1>
       </div>

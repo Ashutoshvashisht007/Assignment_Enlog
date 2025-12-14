@@ -12,18 +12,15 @@
   overflow: hidden;
 }
 
-/* Reset any default margins/padding that might interfere */
 .App * {
   box-sizing: border-box;
 }
 
-/* Ensure full viewport usage */
 .App > * {
   width: 100%;
   height: 100%;
 }
 
-/* Optional: Add some custom scrollbar styling */
 .App ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -43,7 +40,6 @@
   background: #a8a8a8;
 }
 
-/* Firefox scrollbar styling */
 .App {
   scrollbar-width: thin;
   scrollbar-color: #c1c1c1 #f1f1f1;

@@ -8,7 +8,7 @@ const StatsCards = () => {
   ];
 
   return (
-    <div className="flex items-center align-center ">
+    <div className="flex items-center justify-center rounded-lg shadow-sm w-full max-w-sm hover:scale-105 hover:shadow-md transition-transform duration-200">
       {stats.map((stat, index) => (
         <div key={index} className="p-4 ">
           <div className="flex items-center justify-between">

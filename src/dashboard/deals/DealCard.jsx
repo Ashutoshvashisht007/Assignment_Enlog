@@ -5,7 +5,7 @@ const DealCard = ({ deal }) => (
     className="
       p-4 rounded-lg border transition-colors duration-200
       bg-white text-gray-900
-      hover:bg-[var(--color-gray-900)] hover:text-white
+      hover:bg-[var(--color-gray-800)] hover:text-white
       cursor-pointer
     "
   >
@@ -15,7 +15,6 @@ const DealCard = ({ deal }) => (
     </div>
     <p className="text-sm mb-3">{deal.description}</p>
 
-    {/* अगर आपको location/contact/assignee जैसे details दिखाने हैं */}
     {deal.location && (
       <div className="flex items-center space-x-2 mb-1">
         <MapPin className="h-3 w-3 text-gray-400" />
